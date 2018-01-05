@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+/* --- base start --- */
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  height: 100%;
+  word-wrap: break-word;
+  background-color: #f2f2f2;
+  color: #333;
+  font-size: 16px;
+}
+
+a { text-decoration: none; }
+ul { font-size: 0;}
+li { list-style: none; }
+
+h1 { font-size: 90px; }
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.cf::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.fl { float: left; }
+.fr { float: right; }
+.vt { vertical-align: top;}
+
+/* --- base end --- */
+
+/* --- header start --- */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.header_inner { padding: 0 15px; }
+.header_logo {
+  color: #777;
+  font-size: 60px;
+}
+
+.header_menu {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+
+.header_menu_bar {
+  width: 20px;
+  height: 2px;
+  border-radius: 1px;
+  display: block;
+  background-color: #f2f2f2;
+}
+.header_menu > .header_menu_bar:not(:first-child) { margin-top: 4px;}
+
+.header_btn_link {
+  font-size: 12px;
+  padding: 14px 12px;
+  background-color: #74cfae;
+  color: #fff;
+  display: inline-block;
+}
+
+@media screen and ( max-width: 766px ) {
+  .header_menu {
+    display: block;
+  }
+
+  .header_btn {
+    display: none;
+  }
+}
+/* --- header end --- */
+
+/* --- keyvisual start --- */
+.keyvisual {
+  height: 640px;
+  padding-top: 91px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #c0c0c0;
+  font-size: 30px;
+}
+
+.keyvisual_title {
+  font-weight: 700;
+  color: #74cfae;
+  margin-bottom: 20px;
+}
+/* --- keyvisual end --- */
+
+/* --- what start --- */
+.what {
+  color: #fff;
+  background-color: #74cfae;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.what_contents_list > li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.what_contents_list > li:last-child {
+  max-width: 750px;
+  margin: 20px 0 0 100px;
+}
+
+.what_title {
+  font-size: 24px;
+  margin-bottom: 35px;
+  font-family: 
+}
+
+@media screen and ( max-width: 1200px ) {
+  .what {
+    padding-bottom: 30px;
+  }
+  .what_contents_list > li {
+    display: block;
+  }
+  .what_contents_list > li:last-child {
+    margin: 20px auto 0;
+  }
+}
+/* --- what end --- */
+/* --- base start --- */
+/* --- base end --- */
+/* --- base start --- */
+/* --- base end --- */
+/* --- base start --- */
+/* --- base end --- */
