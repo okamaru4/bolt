@@ -1,1 +1,244 @@
 @charset "UTF-8";
+ /* --- base --- */
+head {
+  height: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+}
+
+body {
+  word-wrap: break-word;
+  background-color: #f2f2f2;
+  color: #333;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h1 { font-size: 90px; }
+h2 {
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 40px;
+}
+
+.txt_design {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 1199px) {
+   .txt_design { padding: 0 20px; }
+}
+a { text-decoration: none; }
+ul { font-size: 0; }
+
+.cf::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.fl { float: left; }
+.fr { float: right; }
+.vt { vertical-align: top; }
+
+.btn {
+  background-color: #74cfae;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.grid { margin: 0 -15px; }
+.grid_col { display: inline-block; }
+.grid_col_7-7 { width: 64%; }
+.grid_col_4 { width: 33.33%; }
+.grid_col_3 { width: 25%; }
+.grid_col_2 { width: 20%; }
+
+@media screen and (max-width: 1199px) {
+  .grid_col { display: block; }
+  .grid_col_7-7,
+  .grid_col_4,
+  .grid_col_3,
+  .grid_col_2 { width: 100%; }
+}
+ /* --- base --- */
+
+ /* --- header --- */
+header {
+  background: #fff;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  z-index: 10;
+}
+
+.header_icon_design {
+  color: #a0a0a0;
+  font-size: 60px;
+}
+
+.header_btn_box {
+  padding: 14px 12px;
+  line-height: 40px;
+ }
+
+.menu_box {
+  border: 1px solid #a0a0a0;
+  border-radius: 3px;
+  width: 30px;
+  padding: 10px;
+  display: none;
+}
+
+.menu_box > li {
+  border: 2px solid #a0a0a0;
+  height: 0;
+  width: 20px;
+  margin: 0 auto 5px;
+}
+.menu_box > li:last-child { margin-bottom: 0; }
+
+@media screen and (max-width: 766px) {
+  .header_inner { padding: 0; }
+  .header_icon { margin-left: 15px; }
+  .menu_box { margin-right: 15px; }
+  .header_btn { display: none; }
+  .menu_box { display: block; }
+
+  .is-active {
+    display: block;
+    width: 100%;
+    border-top: 1px solid #a0a0a0;
+    padding-top: 10px;
+  }
+
+  .header_btn_box {
+    display: inline-block;
+    width: 100%;
+    line-height: 1.4;
+    text-align: left;
+  }
+}
+ /* --- header --- */
+
+ /* --- keyvisual --- */
+.keyvisual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #c0c0c0;
+  margin-top: 94px;
+  padding: 250px 0;
+  font-size: 30px;
+}
+
+.keyvisual_title {
+  color: #74cfae;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 766px) {
+  .keyvisual { padding: 160px 0 130px; }
+  .keyvisual_title {
+    font-size: 80px;
+    margin-bottom: 30px;
+  }
+}
+ /* --- keyvisual --- */
+
+ /* --- what --- */
+ .what {
+   color: #fff;
+   background-color: #74cfae;
+   padding-top: 50px;
+ }
+
+ @media screen and (max-width: 1199px) {
+   .what { padding-bottom: 25px; }
+   .what_title { margin-top: 20px; }
+ }
+ /* --- what --- */
+
+ /* --- work --- */
+.work { padding: 60px 0 70px; }
+
+.work_img { opacity: .7; }
+.work_img:hover { opacity: 1; }
+
+.work_main_top { margin-bottom: 80px; }
+.work_main_bottom { margin-bottom: 90px; }
+
+.work_sub_btn {
+  padding: 14px 20px;
+  line-height: 40px;
+}
+
+@media screen and (max-width: 1199px) {
+  .work_main_bottom { margin-bottom: 80px; }
+  .work_sub_txt { margin-bottom: 40px; }
+}
+ /* --- work --- */
+
+ /* --- skills --- */
+.skills {
+  background-color: #4e4e4e;
+  color: #fff;
+  padding: 70px 0 110px;
+}
+
+.skills_list_img { margin-bottom: 15px; }
+.skills_list_txt { font-size: 16px; }
+
+@media screen and (max-width: 1199px) {
+  .skills_list > li:not(:last-child) { margin-bottom: 88px; }
+}
+ /* --- skills --- */
+
+ /* --- sns --- */
+.sns { padding: 200px 0; }
+
+.sns_list > li {
+  display: inline-block;
+  width: 185px;
+  height: 120px;
+}
+.sns_list > li:hover { background-color: #fff; }
+
+.sns_list_icon {
+  font-size: 60px;
+  line-height: 120px;
+  color: #74cfae;
+}
+
+@media screen and (max-width: 766px) {
+  .sns { padding: 50px 0;}
+  .sns_list > li {
+    display: block;
+    width: 100%;
+  }
+}
+ /* --- sns --- */
+
+ /* --- footer --- */
+footer {
+  background-color: #74cfae;
+  color: #fff;
+  padding: 20px 10px 25px;
+}
+ /* --- footer --- */
